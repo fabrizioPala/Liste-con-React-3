@@ -1,17 +1,17 @@
-import { Login } from "./Login";
-import { Welcome } from "./Welcome.jsx";
-import { UncontrolledFOrm } from "./uncontrolledForm.jsx";
+import './App.css'
+
+import { TodoList } from './TodoList'
 
 
-function handleLogin(logindata){
- console.log(logindata)
+
+function App() {
+  const list = ["ice", "fire", "earth", "pino"]
+
+  return (
+    <>
+  <TodoList list={list}/>
+    </>
+  )
 }
-export function App() {
-    return (
-        <div>
-           
-           <Welcome name={"Jhon"}/>         
-        </div>
-        
-    );
-}
+
+export default App
